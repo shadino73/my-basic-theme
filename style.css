@@ -1,5 +1,507 @@
 /*
 Theme Name: Basic Theme
+Theme URI: https://github.com/shadino73/my-basic-theme
 Author: Shadi Al Hassan
-*/ 
+Version: 1.1.0
+*/
 
+
+/*---------------------
+RESET
+---------------------*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Impact', 'arial narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+/*---------------------
+LAYOUT
+---------------------*/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav.main-nav ul,
+.icon-wrapper,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0.5rem 1vw;
+}
+
+header h1 {
+    padding-top: 0;
+}
+
+
+.infographic-modul figure {
+    position: relative;
+}
+
+.infographic-modul figure img {
+    position: absolute;
+    z-index: 8;
+}
+
+.infographic-modul article {
+    position: absolute;
+    z-index: 10;
+    top: 09vw;
+    left: 50vw;
+    width: 40vw;
+    font-size: 1.5vw;
+    line-height: 2.7vw
+}
+
+.infographic-modul article h2 {
+
+    font-size: 1.2em;
+    color: #27A987
+}
+
+.infographic-modul article h3 {
+
+    color: #27A987
+}
+
+
+
+.infographic-modul {
+    height: 100vh;
+}
+
+nav.modul-navigation .icon-wrapper {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2vw;
+        z-index: 10;
+}
+
+nav.modul-navigation .icon-wrapper:nth-child(1) {
+    top: 16vw;
+    left: 19vw;
+}
+
+nav.modul-navigation .icon-wrapper:nth-child(2) {
+    top: 25vw;
+    left: 19vw;
+}
+
+nav.modul-navigation .icon-wrapper:nth-child(3) {
+    top: 25vw;
+    left: 29vw;
+}
+
+nav.modul-navigation .icon-wrapper:nth-child(4) {
+    top: 36vw;
+    left: 18vw;
+}
+
+nav.modul-navigation .icon-wrapper:nth-child(5) {
+    top: 49vw;
+    left: 29vw;
+}
+
+nav.modul-navigation .icon-wrapper:nth-child(6) {
+    top: 57.5vw;
+    left: 7.5vw;
+}
+
+
+.icon-wrapper p {
+
+    padding: 0;
+}
+
+span.icon {
+    display: inline-block;
+    width: 3.2vw;
+}
+
+nav.modul-navigation .icon-wrapper:nth-child(6) span.icon {
+        width: 5.2vw;
+}
+
+
+.article-heading-wrapper {
+    display: flex;
+}
+
+.article-heading-wrapper span.icon {
+    width: 8vw;
+}
+
+.article-heading-wrapper p {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.article-heading-wrapper h2 {
+    padding-top: 2em;
+}
+
+.background-square {
+    position: absolute;
+        transform: rotate(47deg);
+    border-radius: 15%;
+
+}
+
+.background-square-big {
+
+    left: 37vw;
+    top: -10vw;
+    width: 105vw;
+    height: 105vw;
+    z-index: 1;
+}
+
+.background-square-small {
+        z-index: 5;
+        left: 6vw;
+    top: 57vw;
+    width: 10vw;
+    height: 10vw;
+}
+
+/*---------------------
+NAVIGATION
+---------------------*/
+
+nav.main-nav {}
+
+nav.main-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav.main-nav ul li {
+    margin-right: 1em;
+}
+
+nav.main-nav ul li a {
+    color: #000;
+}
+
+nav.main-nav ul li a:hover {
+    color: #27A987;
+}
+
+/*---------------------
+TYPOGRAFIE
+---------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@1,300&display=swap');
+
+
+nav.modul-navigation,
+.infographic-modul article {
+    font-family: 'PT Sans';
+}
+
+nav.modul-navigation {
+    font-weight: bold;
+}
+
+
+.infographic figure img {
+    width: 100vw;
+}
+
+.big {
+    text-transform: uppercase;
+}
+
+
+/*---------------------
+FARBE/STIL
+---------------------*/
+
+header {
+    background: rgba(255,255,255,0.9);
+}
+.background-square {
+    background: #fff;
+}
+
+body,
+footer,
+.infographic-modul {
+background-color: #27A987;
+}
+
+
+
+.text-grey {
+    color: #132531;
+}
+
+.text-green {
+    color: #27A987;
+}
+
+.modul h3 {
+    color: #fff;
+    font-size: 3vw;
+    line-height: 0.85em;
+}
+
+.modul p {
+    font-size: 0.7vw;
+
+}
+
+
+
+.h1-container H1 {
+    font-size: 3vw;
+    line-height: 1;
+}
+
+.h1-container p {
+    font-size: 2vw;
+    line-height: 1;
+}
+
+.dark-bgr p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.gold h3 {
+    color: rgba(177, 128, 70, 1);
+}
+
+.gray h3 {
+    color: rgba(164, 155, 148, 1);
+}
+
+.light-bgr p,
+.light-bgr h3 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.modul h3,
+.modul p {
+    margin: 0;
+}
+
+section.infographic {
+    position: relative;
+}
+
+section.infographic .modul,
+section.infographic ul,
+section.infographic li {
+    position: absolute;
+}
+
+section.infographic ul {
+    list-style-type: none;
+}
+
+
+
+section.infographic li {
+    /*            border: 1px solid red;*/
+    width: 30vw;
+    color: #fff;
+    font-size: 3vw;
+    line-height: 0.85em;
+}
+
+section.infographic li a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+section.infographic li a:hover {
+    color: #fff;
+    font-size: 5vw;
+}
+
+section.infographic li a:hover span {
+    display: none;
+}
+
+section.infographic li span {
+    display: block;
+    font-size: 0.7vw;
+    line-height: 0.85em;
+    color: #000;
+}
+
+section.infographic li:nth-child(1) {
+    left: 31vw;
+    top: 16vw;
+}
+
+section.infographic li:nth-child(2) {
+    left: 24vw;
+    top: 23vw;
+}
+
+section.infographic li:nth-child(3) {
+    left: 32vw;
+    top: 23vw;
+}
+
+section.infographic li:nth-child(4) {
+    left: 40vw;
+    top: 23vw;
+}
+
+section.infographic li:nth-child(5) {
+    left: 27vw;
+    top: 28vw;
+}
+
+section.infographic li:nth-child(6) {
+    left: 35vw;
+    top: 28vw;
+}
+
+section.infographic li:nth-child(7) {
+    left: 32vw;
+    top: 34vw;
+}
+
+
+section.infographic li:nth-child(8) {
+    left: 50vw;
+    top: 14vw;
+}
+
+section.infographic li:nth-child(9) {
+    left: 54vw;
+    top: 18vw;
+}
+
+section.infographic li:nth-child(10) {
+    left: 50vw;
+    top: 22vw;
+}
+
+section.infographic li:nth-child(11) {
+    left: 68vw;
+    top: 19vw;
+}
+
+section.infographic li:nth-child(12) {
+    left: 63vw;
+    top: 23vw;
+}
+
+section.infographic li:nth-child(13) {
+    left: 72vw;
+    top: 23vw;
+}
+
+section.infographic li:nth-child(14) {
+    left: 65vw;
+    top: 28vw;
+}
+
+section.infographic li:nth-child(15) {
+    left: 52vw;
+    top: 30vw;
+}
+
+section.infographic li:nth-child(16) {
+    left: 48vw;
+    top: 34vw;
+}
+
+section.infographic li:nth-child(17) {
+    left: 57vw;
+    top: 34vw;
+}
+
+section.infographic li:nth-child(18) {
+    left: 52vw;
+    top: 38vw;
+}
+
+section.infographic li:nth-child(19) {
+    left: 54vw;
+    top: 43vw;
+}
+
+section.infographic li:nth-child(20) {
+    left: 67vw;
+    top: 42vw;
+}
+
+section.infographic li:nth-child(21) {
+    left: 63vw;
+    top: 46vw;
+}
+
+section.infographic li:nth-child(22) {
+    left: 68vw;
+    top: 48vw;
+}
+
+section.infographic li:nth-child(23) {
+    left: 66vw;
+    top: 52vw;
+}
+
+
+section.infographic li:nth-child(24) {
+    left: 85vw;
+    top: 32vw;
+}
+
+section.infographic li:nth-child(25) {
+    left: 81vw;
+    top: 36vw;
+}
+
+section.infographic li:nth-child(26) {
+    left: 88vw;
+    top: 38vw;
+}
+
+section.infographic li:nth-child(27) {
+    left: 83vw;
+    top: 43vw;
+}
+
+
+section.infographic figure {
+    margin: 0;
+}
+
+/*---------------------
+TMP
+---------------------*/
+/*
+.infographic-modul article {
+    border: 1px solid red;
+    background: rgba(255,0,0,0.3);
+    color: rgba(255,0,0,0.8);
+}
